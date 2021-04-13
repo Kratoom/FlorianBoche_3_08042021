@@ -1,0 +1,14 @@
+.logo{
+    text-align: center;
+    img{
+        width:250px ;
+    }
+    @media screen and (min-width:1024px) {
+        img {width:500px}
+        
+    }
+}
+
+.recherche{
+    display: flex;
+}

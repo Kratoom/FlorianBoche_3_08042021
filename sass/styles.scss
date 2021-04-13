@@ -1,0 +1,12 @@
+@import "./variables.scss";
+@import "./keyframes.scss";
+@import "./pages/accueil.scss";
+@import "./pages/menu.scss";
+
+//Ici tout le code global //
+img{
+    max-width: 100%;
+}
+p{
+    color: $blue;
+}

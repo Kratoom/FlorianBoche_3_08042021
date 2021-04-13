@@ -1,0 +1,25 @@
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 250px;
+}
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 500px;
+  }
+}
+
+.recherche {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: #03E3FC;
+}
+
+/*# sourceMappingURL=styles.css.map */
