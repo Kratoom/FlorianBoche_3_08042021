@@ -1,17 +1,115 @@
-.logo {
+.home header {
+  display: grid;
+}
+.home .logo {
   text-align: center;
 }
-.logo img {
-  width: 250px;
+.home .logo img {
+  width: 150px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .logo img {
+  .home .logo img {
     width: 500px;
   }
 }
-
-.recherche {
+.home .recherche {
+  justify-content: center;
   display: flex;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.home .fas.fa-map-marker-alt {
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.home h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.home .reservez {
+  background-color: #F6F6F6;
+  height: 230px;
+}
+.home .reservez p {
+  text-align: center;
+}
+.home h2 {
+  margin-left: 20px;
+}
+.home .bouton {
+  display: block;
+  width: 240px;
+  height: 55px;
+  border-radius: 30px;
+  font-size: 18px;
+  justify-content: center;
+  margin-left: 60px;
+  color: white;
+  background-color: #9356DC;
+}
+.home .fonctionnement {
+  display: flex;
+  width: 90%;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.home .fonctionnement p {
+  margin-right: 60px;
+}
+.home section {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+}
+.home article {
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px #DBDBDB;
+  width: 95%;
+  color: black;
+  height: 265px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.home article p {
+  margin-top: 15px;
+  margin-left: 20px;
+  line-height: 5px;
+  font-weight: bold;
+}
+.home article strong {
+  margin-left: 20px;
+  font-weight: normal;
+}
+.home article img {
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  object-fit: cover;
+}
+.home footer {
+  background-color: #353535;
+  color: white;
+  margin-top: 50px;
+}
+.home footer .bloc {
+  margin-left: 20px;
+}
+.home footer h3 {
+  font-family: "Shrikhand", cursive;
 }
 
 img {
@@ -19,7 +117,14 @@ img {
 }
 
 p {
-  color: #03E3FC;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
