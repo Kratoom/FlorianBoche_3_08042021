@@ -1,34 +1,34 @@
 .home {
-    header{
+    header {
         display: grid;
     }
+
     .logo {
         text-align: center;
 
         img {
             width: 150px;
             margin-top: 20px;
-        }
 
-        @media screen and (min-width:1024px) {
-            img {
-                width: 500px
+            @media screen and (min-width:1024px) {
+                width: 500px;
             }
-
         }
+
     }
+
     .recherche {
+        width: 100%;
         justify-content: center;
         display: flex;
-        width: 100%;
         background-color: #EAEAEA;
     }
 
     .fas.fa-map-marker-alt {
-        padding-right: 20px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
+        padding-right: 20px;
     }
 
     h1 {
@@ -38,7 +38,7 @@
     }
 
     .reservez {
-        background-color: $quaternaire;
+        background-color: $quaternary;
         height: 230px;
 
         & p {
@@ -51,56 +51,92 @@
     }
 
     .bouton {
-        display: block;
         width: 240px;
         height: 55px;
+        display: block;
+        justify-content: center;
         border-radius: 30px;
         font-size: 18px;
-        justify-content: center;
         margin-left: 60px;
         color: white;
-        background-color: $primary;
+        background: linear-gradient(0deg, rgba(162, 91, 221, 1) 0%, rgba(230, 113, 218, 1) 100%);
     }
 
     .fonctionnement {
-        display: flex;
-        width: 90%;
-        background-color: $quaternaire;
-        border-radius: 20px;
+        width: 88%;
         height: 70px;
-        margin-bottom: 20px;
-        margin-left: 20px;
+        display: flex;
         align-items: center;
         justify-content: center;
         justify-content: space-around;
         font-weight: bold;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        border-radius: 20px;
+        background-color: $quaternary;
 
         & p {
             margin-right: 60px;
+            align-items: center;
+        }
+
+        & .fas {
+            margin-left: 20px;
         }
     }
 
+    .deguster {
+        background-color: rgba(129, 42, 170, 0.1);
+
+        & .fa-store {
+            color: $primary;
+        }
+
+
+    }
+
+    .number {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 25px;
+        margin-left: 20px;
+        border-radius: 50%;
+        background-color: $primary;
+
+
+        & p {
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-left: 5px;
+            color: white;
+        }
+
+    }
+
     section {
-        background-color: $quaternaire;
+        background-color: $quaternary;
         padding-top: 20px;
     }
 
     article {
+        width: 91%;
+        height: 245px;
+        margin: auto;
+        margin-bottom: 20px;
         border-radius: 20px;
         background-color: white;
         margin-top: 20px;
         box-shadow: 3px 3px 6px#DBDBDB;
-        width: 95%;
         color: black;
-        height: 265px;
-        margin: auto;
-        margin-bottom: 20px;
 
         & p {
-            margin-top: 15px;
             margin-left: 20px;
-            line-height: 5px;
             font-weight: bold;
+            margin-bottom: 0px;
         }
 
         & strong {
@@ -109,24 +145,83 @@
         }
 
         img {
-            display: flex;
-            border-radius: 20px 20px 0 0;
             width: 100%;
-            margin: auto;
-            height: 200px;
+            height: 175px;
+            display: flex;
             object-fit: cover;
+            margin: auto;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .new {
+            width: 30%;
+            height: 40px;
+            font-weight: bold;
+            background-color: #99E2D0;
+            position: absolute;
+            left: 230px;
+            margin-top: 20px;
+
+            &>p {
+                display: flex;
+                justify-content: center;
+                color: rgb(59, 143, 111);
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+
+
+        .heart {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30px;
+
+            & .fa-heart {
+                margin-top: 15px;
+                font-size: 25px;
+                border-radius: 50%;
+                background-size: 50px;
+            }
+
+            & .fas {
+                color: $primary;
+            }
         }
     }
-    footer{
+
+
+    footer {
+        margin-top: 50px;
         background-color: #353535;
         color: white;
-        margin-top: 50px;
-        & .bloc{
-        margin-left: 20px;
+
+        & .bloc {
+            margin-left: 20px;
+            padding-bottom: 25px;
         }
-        & h3{
+
+        & h3 {
             font-family: 'Shrikhand', cursive;
+            padding-top: 20px;
         }
+
+        & ul {
+            list-style-type: none;
+            padding-left: 0px;
+
+            & li {
+                display: flex;
+                
+                & .fas{
+                    margin-right: 15px;
+                    margin-top: 20px;
+                }
+
+            }
+
+        }
+
     }
 
 

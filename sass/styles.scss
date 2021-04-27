@@ -1,8 +1,9 @@
 @import "./variables.scss";
 @import "./keyframes.scss";
-@import "./pages/mixins.scss";
+@import "./fonts.scss";
 @import "./pages/accueil.scss";
 @import "./pages/menu.scss";
+
 
 //Ici tout le code global //
 img{
@@ -16,5 +17,8 @@ body{
      width: 100%;
      max-width: 1200px;
      margin: 0 auto;
-
+}
+a{
+    text-decoration: none;
+    color: white;
 }
