@@ -10,6 +10,11 @@
   width: 150px;
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .home .logo img {
+    width: 250px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .home .logo img {
     width: 500px;
@@ -66,6 +71,12 @@
     margin: auto;
   }
 }
+@media screen and (min-width: 1024px) {
+  .home .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
 .home .fonctionnement {
   width: auto;
   height: 70px;
@@ -79,43 +90,69 @@
   border-radius: 20px;
   background-color: #F6F6F6;
 }
-@media screen and (min-width: 768px) {
-  .home .fonctionnement {
-    width: 70%;
-    margin-left: 100px;
-  }
+.home .fonctionnement:hover {
+  background-color: #F5EDFF;
+}
+.home .fonctionnement:hover .fas {
+  color: #9356DC;
 }
 .home .fonctionnement p {
   margin-right: 60px;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .home .fonctionnement p {
+    margin-right: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .fonctionnement p {
+    margin-right: 100px;
+  }
+}
 .home .fonctionnement .fas {
   margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .home .fonctionnement .fas {
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .fonctionnement .fas {
+    margin-left: 100px;
+    margin-right: 20px;
+  }
 }
 .home .number {
   width: 20px;
   height: 20px;
+  display: flex;
+  justify-content: center;
   position: absolute;
   z-index: 1;
-  margin-top: 25px;
-  margin-left: 22px;
+  left: 0;
+  transform: translateX(-50%);
   border-radius: 50%;
   background-color: #9356DC;
-}
-@media screen and (min-width: 768px) {
-  .home .number {
-    margin-left: 91px;
-  }
 }
 .home .number p {
   margin-right: 0px;
   margin-top: 0px;
-  margin-left: 5px;
   color: white;
 }
 .home section {
   background-color: #F6F6F6;
   padding-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .home section .groupe {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+  }
 }
 .home article {
   width: auto;
@@ -127,6 +164,12 @@
   box-shadow: 3px 3px 6px #DBDBDB;
   color: black;
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .home article {
+    display: flex;
+    width: 500px;
+  }
 }
 .home article h3 {
   margin: 10px 0px 0px 20px;
@@ -177,8 +220,8 @@
   border-radius: 50%;
   background-size: 50px;
 }
-.home article .heart .fas {
-  color: #9356DC;
+.home article .heart .fa-heart:hover {
+  background: linear-gradient(0deg, #a25bdd 0%, #e671da 100%);
 }
 .home footer {
   margin-top: 50px;
@@ -221,12 +264,7 @@
 }
 .home footer ul li .fas {
   margin-right: 15px;
-  margin-top: 20px;
-}
-@media screen and (min-width: 768px) {
-  .home footer ul li .fas {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
 }
 
 img {
