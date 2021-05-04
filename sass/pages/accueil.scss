@@ -47,35 +47,51 @@
     }
 
     h2 {
-        margin-left: 20px;
+        margin-left: 25px;
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: center;
+            margin-left: 0px;;
+            
+        }
+
     }
 
     .bouton {
         width: 240px;
         height: 55px;
-        display: block;
+        display: flex;
         justify-content: center;
+        align-items: center;
         border-radius: 30px;
         font-size: 18px;
-        margin-left: 60px;
+        margin-left: 65px;
         color: white;
         background: linear-gradient(0deg, rgba(162, 91, 221, 1) 0%, rgba(230, 113, 218, 1) 100%);
+        
+        @media screen and (min-width:768px) {
+            margin: auto;
+        }
     }
 
     .fonctionnement {
-        width: 88%;
+        width: auto;
         height: 70px;
         display: flex;
         align-items: center;
-        justify-content: center;
         justify-content: space-around;
         font-weight: bold;
         position: relative;
         z-index: 0;
-        margin-bottom: 20px;
-        margin-left: 30px;
+        margin: 0px 20px 20px 30px;
         border-radius: 20px;
         background-color: $quaternary;
+
+        @media screen and (min-width:768px) {
+            width: 70%;
+            margin-left: 100px;
+            
+        }
 
         & p {
             margin-right: 60px;
@@ -87,16 +103,6 @@
         }
     }
 
-    .deguster {
-        background-color: rgba(129, 42, 170, 0.1);
-
-        & .fa-store {
-            color: $primary;
-        }
-
-
-    }
-
     .number {
         width: 20px;
         height: 20px;
@@ -106,6 +112,10 @@
         margin-left: 22px;
         border-radius: 50%;
         background-color: $primary;
+        @media screen and (min-width:768px) {
+           margin-left: 91px;
+            
+        }
 
 
         & p {
@@ -123,24 +133,24 @@
     }
 
     article {
-        width: 91%;
+        width: auto;
         height: 245px;
-        margin: auto;
-        margin-bottom: 20px;
+        margin: 0px 20px 20px 20px;
         border-radius: 20px;
         background-color: white;
         margin-top: 20px;
         box-shadow: 3px 3px 6px#DBDBDB;
         color: black;
+        position: relative;
+
+        & h3 {
+            margin: 10px 0px 0px 20px;
+            font-weight: bold;
+        }
 
         & p {
             margin-left: 20px;
-            font-weight: bold;
-            margin-bottom: 0px;
-        }
-
-        & strong {
-            margin-left: 20px;
+            margin-top: 0px;
             font-weight: normal;
         }
 
@@ -159,8 +169,13 @@
             font-weight: bold;
             background-color: #99E2D0;
             position: absolute;
-            left: 230px;
+            right: 15px;
             margin-top: 20px;
+            
+            @media screen and (min-width:768px) {
+                width: 25%;
+                
+            }
 
             &>p {
                 display: flex;
@@ -199,11 +214,22 @@
         & .bloc {
             margin-left: 20px;
             padding-bottom: 25px;
+
+            @media screen and (min-width:768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
         }
 
-        & h3 {
+        & h4 {
             font-family: 'Shrikhand', cursive;
             padding-top: 20px;
+            @media screen and (min-width:768px) {
+                font-size: 25px;
+                padding-top:0px;
+            }
         }
 
         & ul {
@@ -212,10 +238,20 @@
 
             & li {
                 display: flex;
+                line-height: 5px;
+                @media screen and (min-width:768px) {
+                    justify-content: center;
+                    
+                }
+                
                 
                 & .fas{
                     margin-right: 15px;
                     margin-top: 20px;
+                    @media screen and (min-width:768px) {
+                        margin-top: 10px;
+                        
+                    }
                 }
 
             }
