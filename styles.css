@@ -273,10 +273,20 @@
   width: 100%;
   display: flex;
 }
+.menus .hautpage a {
+  text-decoration: none;
+  color: black;
+}
 .menus .hautpage .fa-arrow-left {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  height: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .menus .hautpage .fa-arrow-left {
+    margin-top: 15px;
+  }
 }
 .menus .hautpage .logo {
   width: 100%;
@@ -300,14 +310,13 @@
     width: 350px;
   }
 }
-.menus .hautpage .img_menue {
-  position: absolute;
-  z-index: 0;
+.menus .img_menue {
+  object-fit: cover;
 }
 @media screen and (min-width: 1024px) {
-  .menus .hautpage .img_menue {
+  .menus .img_menue {
     height: 500px;
-    width: 50%;
+    width: 100%;
   }
 }
 .menus section {
@@ -438,16 +447,23 @@
 .menus footer h4 {
   font-family: "Shrikhand", cursive;
   padding-top: 20px;
+  margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
   .menus footer h4 {
     font-size: 25px;
-    padding-top: 0px;
   }
 }
 .menus footer ul {
   list-style-type: none;
   padding-left: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .menus footer ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .menus footer ul li {
   display: flex;
