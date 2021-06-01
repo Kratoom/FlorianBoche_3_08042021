@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@keyframes anime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .home header {
   display: grid;
 }
@@ -380,17 +388,41 @@
   }
 }
 .menus section article .repas {
+  display: flex;
   background-color: white;
   border-radius: 15px;
   height: 85px;
-  width: 100%;
-  display: flex;
   margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  animation: anime 1000ms ease-in-out both;
 }
 @media screen and (min-width: 1024px) {
   .menus section article .repas {
     width: 33%;
   }
+}
+.menus section article .repas:hover span {
+  width: 15%;
+}
+.menus section article .repas:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: transform 0.4s ease-in-out;
+}
+.menus section article .repas .icon {
+  display: flex;
+  background-color: #99E2D0;
+  width: 0%;
+  color: white;
+  overflow: hidden;
+  transition: width 400ms;
+}
+.menus section article .repas .fa-check-circle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
 }
 .menus section article .repas .regroupement {
   margin-left: 15px;
@@ -414,6 +446,37 @@
 .menus section article .repas .regroupement strong {
   font-weight: bold;
   margin-top: 20px;
+  margin-right: 10px;
+}
+.menus section article .animation1 {
+  animation-delay: 100ms;
+}
+.menus section article .animation2 {
+  animation-delay: 200ms;
+}
+.menus section article .animation3 {
+  animation-delay: 300ms;
+}
+.menus section article .animation4 {
+  animation-delay: 400ms;
+}
+.menus section article .animation5 {
+  animation-delay: 500ms;
+}
+.menus section article .animation6 {
+  animation-delay: 600ms;
+}
+.menus section article .animation7 {
+  animation-delay: 700ms;
+}
+.menus section article .animation8 {
+  animation-delay: 800ms;
+}
+.menus section article .animation9 {
+  animation-delay: 900ms;
+}
+.menus section article .animation10 {
+  animation-delay: 1000ms;
 }
 .menus section .button {
   width: 240px;

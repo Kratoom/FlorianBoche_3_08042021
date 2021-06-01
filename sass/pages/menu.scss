@@ -1,5 +1,4 @@
 .menus {
-
     .hautpage {
         width: 100%;
         display: flex;
@@ -133,19 +132,50 @@
 
 
             & .repas {
+                display: flex;
                 background-color: white;
                 border-radius: 15px;
                 height: 85px;
-                width: 100%;
-                display: flex;
                 margin-bottom: 20px;
+                cursor: pointer;
+                overflow: hidden;
+                animation: anime 1000ms ease-in-out both;
 
                 @media screen and (min-width:1024px) {
                     width: 33%;
                 }
 
+                &:hover {
+                    span {
+                        width: 15%;
+                    }
+
+                    .fa-check-circle {
+                        transform: rotate(360deg);
+                        transition: transform 0.4s ease-in-out;
+                    }
+
+                }
+
+                & .icon {
+                    display: flex;
+                    background-color: $tertiary;
+                    width: 0%;
+                    color: white;
+                    overflow: hidden;
+                    transition: width 400ms;
 
 
+                }
+
+                & .fa-check-circle {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                    font-size: 20px;
+                }
+                
                 & .regroupement {
                     margin-left: 15px;
                     width: 100%;
@@ -172,12 +202,51 @@
                     & strong {
                         font-weight: bold;
                         margin-top: 20px;
+                        margin-right: 10px;
                     }
                 }
 
             }
+            .animation1 {
+                animation-delay: 100ms;
+            }
 
+            .animation2 {
+                animation-delay: 200ms;
+            }
+
+            .animation3 {
+                animation-delay: 300ms;
+            }
+
+            .animation4 {
+                animation-delay: 400ms;
+            }
+
+            .animation5 {
+                animation-delay: 500ms;
+            }
+
+            .animation6 {
+                animation-delay: 600ms;
+            }
+
+            .animation7 {
+                animation-delay: 700ms;
+            }
+
+            .animation8 {
+                animation-delay: 800ms;
+            }
+
+            .animation9 {
+                animation-delay: 900ms;
+            }
+            .animation10{
+                animation-delay: 1000ms;
+            }
         }
+
 
         .button {
             width: 240px;
@@ -255,5 +324,4 @@
 
         }
     }
-
 }
