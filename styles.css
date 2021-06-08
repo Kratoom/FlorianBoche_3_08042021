@@ -243,9 +243,6 @@
   opacity: 0;
 }
 .home article .heart .fas:hover {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   color: #a25bdd;
   opacity: 1;
 }
@@ -336,11 +333,12 @@
 }
 .menus .img_menue {
   object-fit: cover;
+  height: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .menus .img_menue {
     height: 500px;
-    width: 100%;
   }
 }
 .menus section {
