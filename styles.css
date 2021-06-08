@@ -45,7 +45,9 @@
 .home h1 {
   text-align: center;
   font-weight: bold;
+  margin-top: 0px;
   font-size: 22px;
+  padding-top: 10px;
 }
 .home .reservez {
   background-color: #F6F6F6;
@@ -79,6 +81,11 @@
   background: linear-gradient(0deg, #a25bdd 0%, #e671da 100%);
   box-shadow: 0px 3px 9px grey;
   cursor: pointer;
+  opacity: 0.9;
+}
+.home .bouton:hover {
+  opacity: 1;
+  box-shadow: 0px 5px 11px grey;
 }
 @media screen and (min-width: 1024px) {
   .home .menu {
@@ -332,7 +339,7 @@
 }
 .menus .img_menue {
   object-fit: cover;
-  height: 450px;
+  height: 300px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -504,6 +511,11 @@
   background: linear-gradient(0deg, #a25bdd 0%, #e671da 100%);
   box-shadow: 0px 3px 9px grey;
   cursor: pointer;
+  opacity: 0.9;
+}
+.menus section .button:hover {
+  opacity: 1;
+  box-shadow: 0px 5px 11px grey;
 }
 .menus footer {
   background-color: #353535;
