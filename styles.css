@@ -19,6 +19,7 @@
 .home .logo img {
   width: 150px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .home .logo img {
@@ -58,6 +59,7 @@
 }
 .home h2 {
   margin-left: 25px;
+  margin-top: 25px;
 }
 @media screen and (min-width: 768px) {
   .home h2 {
@@ -271,11 +273,12 @@
 .home footer h4 {
   font-family: "Shrikhand", cursive;
   padding-top: 20px;
+  margin-top: 0;
+  font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .home footer h4 {
     font-size: 25px;
-    padding-top: 0px;
   }
 }
 .home footer ul {
@@ -303,9 +306,13 @@
   margin-top: 10px;
 }
 
+.menus .content_container {
+  background-color: #F6F6F6;
+}
 .menus .hautpage {
   width: 100%;
   display: flex;
+  background-color: white;
 }
 .menus .hautpage a {
   text-decoration: none;
@@ -360,7 +367,7 @@
   z-index: 1;
   transform: translateY(-6%);
   border-radius: 40px 40px 0 0;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 @media screen and (min-width: 1024px) {
   .menus section {
@@ -368,7 +375,7 @@
   }
 }
 .menus section .ensemble {
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 .menus section .ensemble .heart {
   display: flex;
@@ -469,6 +476,10 @@
 .menus section article .repas .regroupement .prix p {
   font-weight: normal;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 240px;
 }
 .menus section article .repas .regroupement strong {
   font-weight: bold;
@@ -529,7 +540,7 @@
   color: white;
 }
 .menus footer .bloc {
-  margin-left: 20px;
+  margin-left: 25px;
   padding-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -543,6 +554,7 @@
   font-family: "Shrikhand", cursive;
   padding-top: 20px;
   margin-top: 0px;
+  font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .menus footer h4 {
