@@ -10,39 +10,6 @@
     transform: translateY(0);
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.home .loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-.home .loader-quart {
-  border-radius: 50px;
-  border: 6px solid #a25bdd;
-}
-.home .loader-quart:after {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: #FFF;
-  animation: spin 2s linear infinite;
-}
 .home header {
   display: grid;
 }
@@ -471,7 +438,7 @@
   }
 }
 .menus section article .repas:hover span {
-  width: 20%;
+  width: 25%;
 }
 .menus section article .repas:hover .fa-check-circle {
   transform: rotate(360deg);
@@ -504,7 +471,6 @@
   overflow: hidden;
   font-size: 18px;
   margin-top: 10px;
-  width: 260px;
 }
 .menus section article .repas .regroupement .prix {
   display: flex;
@@ -516,7 +482,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 220px;
 }
 .menus section article .repas .regroupement strong {
   font-weight: bold;
@@ -645,4 +610,4 @@ a {
   color: white;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
