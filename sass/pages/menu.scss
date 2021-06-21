@@ -1,6 +1,6 @@
 .menus {
 
-    .content_container{
+    .content_container {
         background-color: $quaternary;
     }
 
@@ -152,6 +152,7 @@
 
                 @media screen and (min-width:1024px) {
                     width: 33%;
+                    height: 70px;
                 }
 
                 &:hover {
@@ -163,6 +164,17 @@
                         transform: rotate(360deg);
                         transition: transform 0.4s ease-in-out;
                     }
+
+                    & .regroupement {
+
+                        & .prix {
+
+                            & p {
+                                width: 220px;
+                            }
+                        }
+                    }
+
 
                 }
 
@@ -185,6 +197,7 @@
                     font-size: 20px;
                 }
 
+
                 & .regroupement {
                     margin-left: 15px;
                     width: 100%;
@@ -196,9 +209,9 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
-                        font-size: 18px;
+                        font-size: 17px;
                         margin-top: 10px;
-                        width: 260px;
+
                     }
 
                     & .prix {
@@ -211,15 +224,16 @@
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
-                            width: 220px;
                         }
+
+
                     }
 
                     & strong {
                         font-weight: bold;
                         margin: 0;
                         padding: 0;
-                        margin-top: 13px;
+                        margin-top: 10px;
                         margin-right: 15px;
                     }
                 }
@@ -240,6 +254,22 @@
 
             .animation4 {
                 animation-delay: 400ms;
+            }
+
+            .animationspec {
+                animation-delay: 400ms;
+                line-height: 15px;
+
+                & .regroupement {
+
+                    & p {
+                        & br {
+                            @media screen and (min-width:1024px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
 
             .animation5 {

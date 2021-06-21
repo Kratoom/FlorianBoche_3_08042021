@@ -18,6 +18,30 @@
     transform: rotate(360deg);
   }
 }
+@keyframes vis {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.home .load {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: vis 200ms 2s forwards;
+  background-color: white;
+  opacity: 0.7;
+}
 .home .loader {
   width: 50px;
   height: 50px;
@@ -468,6 +492,7 @@
 @media screen and (min-width: 1024px) {
   .menus section article .repas {
     width: 33%;
+    height: 70px;
   }
 }
 .menus section article .repas:hover span {
@@ -476,6 +501,9 @@
 .menus section article .repas:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 0.4s ease-in-out;
+}
+.menus section article .repas:hover .regroupement .prix p {
+  width: 220px;
 }
 .menus section article .repas .icon {
   display: flex;
@@ -502,9 +530,8 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 10px;
-  width: 260px;
 }
 .menus section article .repas .regroupement .prix {
   display: flex;
@@ -516,13 +543,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 220px;
 }
 .menus section article .repas .regroupement strong {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  margin-top: 13px;
+  margin-top: 10px;
   margin-right: 15px;
 }
 .menus section article .animation1 {
@@ -536,6 +562,15 @@
 }
 .menus section article .animation4 {
   animation-delay: 400ms;
+}
+.menus section article .animationspec {
+  animation-delay: 400ms;
+  line-height: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .menus section article .animationspec .regroupement p br {
+    display: none;
+  }
 }
 .menus section article .animation5 {
   animation-delay: 500ms;

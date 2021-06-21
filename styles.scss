@@ -477,6 +477,9 @@
   transform: rotate(360deg);
   transition: transform 0.4s ease-in-out;
 }
+.menus section article .repas:hover .regroupement .prix p {
+  width: 220px;
+}
 .menus section article .repas .icon {
   display: flex;
   background-color: #99E2D0;
@@ -502,9 +505,8 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 10px;
-  width: 260px;
 }
 .menus section article .repas .regroupement .prix {
   display: flex;
@@ -516,7 +518,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 220px;
 }
 .menus section article .repas .regroupement strong {
   font-weight: bold;
@@ -645,4 +646,4 @@ a {
   color: white;
 }
 
-/*# sourceMappingURL=styles.css--watch.map */
+/*# sourceMappingURL=styles.scss.map */
